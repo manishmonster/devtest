@@ -55,10 +55,10 @@ img{
 }
 .banner{
     position: relative;
-    min-height: 80vh;
-    background-image: url('assets/main-banner.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    // min-height: 80vh;
+    // background-image: url('assets/main-banner.png');
+    // background-repeat: no-repeat;
+    // background-size: cover;
     .header{
         position: absolute;
         top: 8rem;
@@ -68,6 +68,7 @@ img{
     .banner-footer{
         position: absolute;
         bottom: 0;
+        left: 0;
     }
     h1,h3{
         color: #fff;
@@ -231,5 +232,185 @@ img{
     }
     a:hover{
         color: #fff;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .banner{
+        .header{
+            top: 5rem;
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .banner{
+        .header{
+            top: 4rem;
+            width: 40%;
+            left: 11rem;
+        }
+    }
+    .heading {
+        width: 60%;
+    }
+    .services{
+        display: block;
+        .card{
+            max-width: 100%;
+            display: flex;
+            .card-img{ 
+                max-width: 40%;
+                img{
+                    border-radius:0px;
+                    border-top-left-radius: 14px;
+                    border-bottom-left-radius: 14px;
+                    object-fit: cover;
+                    height: auto;
+                    min-height: 100%;
+                }   
+
+            }
+            .card-desc{
+                max-width: 60%;
+                border-radius:0px;
+                border-top-right-radius: 14px;
+                border-bottom-right-radius: 14px;
+                border: 3px solid #D7D7D7CF;
+                border-left: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1003px) {
+    .banner .header{
+        width: 41%;
+        left: 9rem;
+    }
+}
+
+@media screen and (max-width: 979px) {
+    .banner .header{
+        width: 43%;
+    }
+}
+@media screen and (max-width: 932px) {
+    .heading {
+        width: 79%;
+    }
+}
+@media screen and (max-width: 892px) {
+    .banner .header{
+        width: 47%;
+        left: 8rem;
+        top: 3rem;
+    }
+}
+@media screen and (max-width: 889px) {
+    .services .card .card-desc {
+        max-width: 52%;
+    }
+    .services .card .card-img {
+        max-width: 47%;
+    }
+}
+@media screen and (max-width: 860px) {
+    .banner .header {
+        width: 50%;
+        left: 7rem;
+        top: 2rem;
+    }
+}
+@media screen and (max-width: 824px) {
+    .banner .header {
+        width: 51%;
+        left: 6rem;
+    }
+}
+@media screen and (max-width: 796px) {
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .banner .header {
+        width: 51%;
+        left: 6rem;
+    }
+
+}
+@media screen and (max-width: 658px) {
+    .banner .header {
+        top: 1rem;
+        left: 5rem;
+    }
+}
+@media screen and (max-width: 620px) {
+    .banner{
+        min-height: 33vh;
+        background-image: url('assets/main-banner.png');
+        background-size: cover;
+        .banner-img{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 570px) {
+    .banner .header {
+        width: 59%;
+    }
+    .services
+    {
+        width: 95%;
+         .card{
+            display: block;
+            .card-img, .card-desc {
+                max-width: 100%;
+            }
+            .card-img img{
+                border-radius: 0px;
+                border-top-left-radius: 14px;
+                border-top-right-radius: 14px;
+            }
+            .card-desc{
+                border-radius: 0px;
+                border-bottom-left-radius: 14px;
+                border-bottom-right-radius: 14px;
+                border: 3px solid #D7D7D7CF;
+                border-top: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 454px) {
+    .banner{
+        min-height: 34vh;
+    }
+    .banner .header {
+        width: 74%;
+        top: 1rem;
+        left: 2rem;
+    }
+}
+@media screen and (max-width: 413px) {
+    .banner {
+        min-height: 36vh;
+        h1{
+            margin: 0.47em 0;
+        }
+        .header {
+            width: 78%;
+            top: 0rem;
+        }
+    }
+    button{
+        margin-top: 1rem;
     }
 }
