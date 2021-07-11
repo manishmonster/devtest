@@ -454,4 +454,22 @@ img {
     margin-top: 1rem;
   }
 }
+
+@media screen and (max-width: 321px) {
+  .float-nav > a.menu-btn {
+    padding: 12px 14px 6px 13px;
+  }
+  .float-nav > a.menu-btn > .menu-txt {
+    font-size: 9px;
+  }
+  .banner h1 {
+    font-size: 25px;
+  }
+  .banner h3 {
+    font-size: 16px;
+  }
+  .banner button {
+    font-size: 14px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
